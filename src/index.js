@@ -1,5 +1,10 @@
 import "./styles.css";
+import loadHome from "./home";
 
-console.log("It is working!");
+const homeBtn = document.getElementById("home");
+
+homeBtn.addEventListener("click", loadHome());
+
+loadHome();
 
 // alert("Working!");
