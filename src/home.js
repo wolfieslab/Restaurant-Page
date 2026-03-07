@@ -1,3 +1,5 @@
+import loadMenu from "./menu";
+
 export default function loadHome(){
     const content = document.getElementById("content");
     content.innerHTML = "";
@@ -27,4 +29,6 @@ export default function loadHome(){
     hero.append(title, subtitle, heroBtns);
     content.appendChild(hero);
 
+
+    viewMenuBtn.addEventListener("click", loadMenu);
 }

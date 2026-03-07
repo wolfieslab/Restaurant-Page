@@ -1,5 +1,6 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "node:path";
+import test from "node:test";
 
 export default {
     mode: "development",
@@ -19,6 +20,10 @@ export default {
             {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: "asset/resource",
             },
         ],
     },
