@@ -8,20 +8,13 @@
 
 :root {
 
-  /* Primary accent (Italian red) */
   --accent: #c0392b;
   --bg-main: #f6f3ee;
-  --menu-card: #ffffff;
-  /* Dark text */
   --text-dark: #2c2c2c;
-
-  /* Light background */
+  --text-white: #ffffff;
+  --button: #ffffff;
   --bg-light: #faf7f2;
-
-  /* Section background */
   --bg-section: #ffffff;
-
-  /* Gold accent (luxury feel) */
   --gold: #d4a373;
 
 }
@@ -32,7 +25,7 @@ header {
     width: 100%;
     background: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(6px);
-    color: white;
+    color: var(--text-white);
     display: flex;
     justify-content: space-between;
     padding: 10px 24px;
@@ -47,11 +40,18 @@ header nav {
 
 header nav button {
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--button);
+    color: var(--button);
     padding: 8px 24px;
     font-size: 16px;
     cursor: pointer;
+}
+
+nav button:hover,
+.hero button:hover {
+    background-color: var(--button);
+    color: var(--text-dark);
+    transform: translateY(-2px);
 }
 
 .hero {
@@ -64,7 +64,7 @@ header nav button {
 
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(--text-white);
     justify-content: center;
     align-items: center;
 
@@ -79,8 +79,8 @@ header nav button {
 .hero button {
     background-color: transparent;
     padding: 12px 24px;
-    color: white;
-    border: 1px solid white;
+    color: var(--button);
+    border: 1px solid var(--button);
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
@@ -106,7 +106,7 @@ header nav button {
 
 .menu-item {
     display: flex;
-    background-color: var(--menu-card);
+    background-color: var(--bg-section);
     border-radius: 2em;
 }
 
