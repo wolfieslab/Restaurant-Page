@@ -1,3 +1,4 @@
+import bookTable from "./bookTable";
 import loadMenu from "./menu";
 
 export default function loadHome(){
@@ -31,4 +32,5 @@ export default function loadHome(){
 
 
     viewMenuBtn.addEventListener("click", loadMenu);
+    bookTableBtn.addEventListener("click", bookTable);
 }

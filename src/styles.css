@@ -173,3 +173,12 @@ nav button:hover,
     padding: 0 2em;
 }
 
+/* feature in progress */
+
+.booking-container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
