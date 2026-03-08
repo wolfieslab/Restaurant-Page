@@ -91,7 +91,7 @@ function createMenuItem(name, description, image, price){
 
     const itemPrice = document.createElement("p");
     itemPrice.classList.add("price");
-    itemPrice.innerHTML = `<span>${price} Rs</span>`;
+    itemPrice.innerHTML = `Price: <span>${price}Rs</span>`;
 
     menuInfo.append(itemName, itemDescrip, itemPrice);
     item.append(itemImage, menuInfo);

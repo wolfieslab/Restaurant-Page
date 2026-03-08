@@ -140,3 +140,36 @@ nav button:hover,
     font-size: 1.1em;
 }
 
+.contact-container {
+    min-height: 100vh;
+    padding: 6em 12em;
+    background-color: var(--bg-main);
+}
+
+.contact-container .title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1.2em;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+    gap: 4em;
+}
+
+.contact-item {
+    background-color: var(--bg-section);
+    border-radius: 2em;
+    padding: 1.6em 3em;
+}
+
+.contact-item .heading {
+    font-size: 1.4em;
+    margin-bottom: 0.4em;
+}
+
+.contact-info .item-content {
+    padding: 0 2em;
+}
+
